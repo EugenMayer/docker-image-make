@@ -1,6 +1,6 @@
 FROM debian:stretch
 
-RUN apt-get-update && apt-get install -y make \
+RUN apt-get update && apt-get install -y make \
   && rm -rf /tmp/* /var/tmp/* \
   && apt-get clean \
   && rm -rf /var/lib/apt/lists/* \
